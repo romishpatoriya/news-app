@@ -1,9 +1,6 @@
-# news_app
+# entity_sql_app
 
 A new Flutter project.
-
-# code video link
-https://drive.google.com/file/d/1UoDsCeGYDQ7ckqWhzgOuc3FSMSQIr-0p/view?usp=sharing
 
 ## Getting Started
 
