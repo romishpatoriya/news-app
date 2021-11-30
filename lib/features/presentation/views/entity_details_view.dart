@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Audit Entities'),
+          title: const Center(child: Text('Audit Entity')),
         ),
         body: Column(
           children: <Widget>[
