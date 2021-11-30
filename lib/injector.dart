@@ -17,21 +17,14 @@ Future<void> init() async {
   sl.registerFactory<AuditEntityBloc>(() => AuditEntityBloc(sl(),sl(),sl(),sl()));
 
   sl.registerSingleton(AppDatabase(openConnection()));
-  // Dependencies
-
-
-  // UseCases
+  
   sl.registerLazySingleton(() => GetAuditEntities(sl()));
   sl.registerLazySingleton(() => AddAuditEntities(sl()));
   sl.registerLazySingleton(() => UpdateAuditEntities(sl()));
   sl.registerLazySingleton(() => DeleteAuditEntities(sl()));
-  //sl.registerLazySingleton(() => const GetAllAuditEntityEvent());
-
-
+  
   sl.registerSingleton<EntitiesRepository>
     (EntitiesRepositoryImpl( appDatabase: sl()));
 
   sl.registerSingleton(EntityDao);
-  //sl.registerSingleton(GetAllAuditEntityEvent());
-
 }
